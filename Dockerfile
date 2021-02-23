@@ -4,7 +4,7 @@ FROM gcr.io/distroless/static:nonroot
 
 ADD scripts/ /bin/
 
-EXPOSE 3333
+EXPOSE 8080
 
 # Start processes
-CMD /usr/local/bin/start.sh
+CMD /bin/start.sh
