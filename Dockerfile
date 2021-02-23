@@ -1,6 +1,6 @@
 # /usr/local/bin/start.sh will start the service
 
-FROM gcr.io/distroless/static:nonroot 
+FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
 
 ADD scripts/ /bin/
 
