@@ -12,7 +12,7 @@ if [ "$OO_PAUSE_ON_START" = "true" ] ; then
   done
 fi
 
-echo 'traffic gen v0.0.5'
+echo 'traffic gen v0.0.6'
 echo 'This container hosts the following applications:'
 echo
 echo '/bin/traffic-gen'

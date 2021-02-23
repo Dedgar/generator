@@ -2,9 +2,9 @@
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
 
-ADD scripts/ /bin/
+ADD scripts/ /usr/local/bin/
 
 EXPOSE 8080
 
 # Start processes
-CMD /bin/start.sh
+CMD /usr/local/bin/start.sh
