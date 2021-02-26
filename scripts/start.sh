@@ -12,14 +12,14 @@ if [ "$OO_PAUSE_ON_START" = "true" ] ; then
   done
 fi
 
-echo 'traffic gen v0.0.6'
+echo 'traffic gen v0.0.8'
 echo 'This container hosts the following applications:'
 echo
-echo '/bin/traffic-gen'
+echo '/usr/local/bin/generator'
 echo
 echo 'Start the traffic generating process.'
 echo '----------------'
-/bin/bash /bin/traffic-gen --config=/secrets/config.json
+/usr/local/bin/generator --config=/secrets/config.json
 
 echo 'The process has ended unexpectedly. Pausing indefinitely for troubleshooting.'
 while true; do
